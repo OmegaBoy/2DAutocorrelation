@@ -1,4 +1,4 @@
-function [I] = ChooseImageGS(i)
+function [I,name] = ChooseImageGS(i)
     S = dir('Images');
     A = {S(~[S.isdir]).name};
     temp = num2cell(A);
@@ -18,4 +18,6 @@ function [I] = ChooseImageGS(i)
         case 'grayscale'
             I = imread(R);
     end
+    I = im2double(I);
+    [~,name,~] = fileparts(R);
 end

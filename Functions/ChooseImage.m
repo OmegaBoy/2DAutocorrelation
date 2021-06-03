@@ -20,5 +20,4 @@ function [I, ColorType, BitDepth] = ChooseImage(i)
         case 'grayscale'
             I = imread(R);
     end
-    I = im2double(I);
 end
