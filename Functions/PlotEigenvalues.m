@@ -11,7 +11,9 @@ for i = 1:n
         imagesc(X)
         axis off;colormap(1 - gray());
     end
-    
+    if ~exist('Data', 'dir')
+       mkdir('Data')
+    end
     if isfile(strcat('Data\', name, '.mat'))
         load(strcat('Data\', name, '.mat'))
     else 
