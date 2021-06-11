@@ -5,7 +5,6 @@ function WKAutoCorr(n)
         I=mat2gray(ChooseImageGS(n));
     end
     A=autocorr2d(I);
-
     figure;
     subplot(1,2,1)
     imshow(I)

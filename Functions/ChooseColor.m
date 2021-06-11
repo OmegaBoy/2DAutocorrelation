@@ -2,11 +2,13 @@ function [color] = ChooseColor(filename)
     switch filename(1:1)
         case 'C'
             color = 'b';
-        case 'N'
-            color = 'y';
         case 'F'
+            color = 'y';
+        case 'N'
             color = 'g';
-        case 'T'
+        case 'P'
             color = 'm';
+        case 'T'
+            color = 'b';
     end
 end

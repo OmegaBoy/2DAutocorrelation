@@ -7,6 +7,7 @@ function [I,name] = ChooseImageGS(i)
     else
         choise = i;
     end
+    char(A(choise))
     R = strcat('Images\', char(A(choise)));
     ii = imfinfo(R);
     switch ii.ColorType
